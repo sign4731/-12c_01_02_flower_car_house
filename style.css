@@ -1,0 +1,116 @@
+#sun {
+  fill: rgb(247, 247, 75);
+  animation: pulse 1s linear infinite alternate-reverse;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.2, 1.2);
+  }
+}
+
+svg {
+  background-color: rgb(122, 217, 241);
+}
+
+#flower_head circle {
+  fill: tomato;
+}
+#flower_head ellipse {
+  fill: ivory;
+}
+#flower path {
+  stroke: rgb(51, 195, 51);
+  fill: none;
+  stroke-width: 6px;
+}
+
+#flower_head {
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#bricks {
+  fill: rgb(80, 31, 31);
+}
+
+#windows {
+  fill: cornflowerblue;
+  stroke: cornsilk;
+  stroke-width: 7px;
+}
+
+#shine {
+  fill: rgb(118, 159, 230);
+}
+
+#door {
+  fill: darksalmon;
+}
+
+#door_rect {
+  stroke: rgb(80, 31, 31);
+  fill: none;
+  stroke-width: 5px;
+}
+
+#knob {
+  fill: silver;
+}
+
+#roof {
+  fill: rgb(24, 41, 41);
+}
+
+#body {
+  fill: rgb(40, 49, 0);
+}
+
+#wheel {
+  fill: rgb(64, 64, 64);
+  animation: rotate 5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+#car {
+  animation: drive 20s linear infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+@keyframes drive {
+  from {
+    transform: translateX(-70vw);
+  }
+  to {
+    transform: translateX(50vw);
+  }
+}
+
+#car_windows {
+  fill: rgb(11, 11, 11);
+}
+#car_light_front {
+  fill: darkorange;
+}
+
+#car_light_back {
+  fill: darkred;
+}

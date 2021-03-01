@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car, flower, house</title>
+  </head>
+  <body>
+    <svg width="1000" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle id="sun" cx="55" cy="75" r="30" />
+
+      <g id="house">
+        <rect id="bricks" x="300" y="100" width="500" height="400" />
+        <rect id="windows" x="340" y="170" width="100" height="170" />
+        <rect id="windows" x="650" y="170" width="100" height="170" />
+        <polygon id="shine" points="343,173 436.5,250 436.5,173" />
+        <polygon id="shine" points="654,173 746,250 746,173" />
+        <rect id="door" x="470" y="165" width="150" height="350" />
+        <rect id="door_rect" x="480" y="180" width="130" height="310" />
+        <circle id="knob" cx="590" cy="350" r="10" />
+        <polygon id="roof" points="200,150 350,0 750,0 900,150" />
+      </g>
+
+      <g id="car">
+        <polygon id="body" points="343,173 343,450 746,450 870,450 870,300 746,300 746,173" />
+        <ellipse id="wheel" cx="750" cy="450" rx="50" ry="45" />
+        <ellipse id="wheel" cx="400" cy="450" rx="50" ry="45" />
+        <circle id="knob" cx="400" cy="450" r="20" />
+        <circle id="knob" cx="750" cy="450" r="20" />
+        <rect id="car_windows" x="620" y="190" width="120" height="100" />
+        <rect id="car_windows" x="355" y="190" width="120" height="100" />
+        <rect id="car_windows" x="487" y="190" width="120" height="100" />
+        <rect id="car_light_front" x="850" y="310" width="20" height="30" />
+        <rect id="car_light_front" x="343" y="360" width="20" height="30" />
+        <rect id="car_light_back" x="343" y="340" width="20" height="30" />
+      </g>
+      <g id="flower">
+        <path d="M 800 400 C 900 900, 600 1000, 800 500" />
+        <g id="flower_head">
+          <ellipse cx="830" cy="400" rx="20" ry="10" />
+          <ellipse cx="770" cy="400" rx="20" ry="10" />
+          <ellipse cx="800" cy="430" rx="10" ry="20" />
+          <ellipse cx="800" cy="370" rx="10" ry="20" />
+          <circle cx="800" cy="400" r="15" />
+        </g>
+      </g>
+    </svg>
+    <script src="script.js"></script>
+  </body>
+</html>
